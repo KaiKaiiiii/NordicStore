@@ -180,6 +180,7 @@ window.addEventListener("load", () => {
     addButton.forEach((item) => {
       item.addEventListener("click", (e) => {
         e.preventDefault();
+        e.stopPropagation();
         const currentId = e.target.parentNode.parentNode.parentNode.id;
 
         //LOCALSTORAGE GET ITEM
